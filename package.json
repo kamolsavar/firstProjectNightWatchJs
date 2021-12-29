@@ -1,0 +1,25 @@
+{
+  "name": "firstprojectnightwatchjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamolsavar/firstProjectNightWatchJs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamolsavar/firstProjectNightWatchJs/issues"
+  },
+  "homepage": "https://github.com/kamolsavar/firstProjectNightWatchJs#readme",
+  "devDependencies": {
+    "chromedriver": "^96.0.0",
+    "geckodriver": "^3.0.1",
+    "nightwatch": "^1.7.13"
+  }
+}
