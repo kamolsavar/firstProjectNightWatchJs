@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch"
+    "lint": "eslint .",
+    "debug": "node --inspect-brk node_modules/.bin/nightwatch",
+    "test": "nightwatch",
+    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js",
+    "test:vrt": "nightwatch -c nightwatch.vrt.conf.js",
+    "consolidate:vrt": "CONSOLIDATE=1 npm run test:vrt",
+    "test:cucumber": "cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty"
   },
   "repository": {
     "type": "git",
@@ -16,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/kamolsavar/firstProjectNightWatchJs/issues"
   },
-  "homepage": "https://github.com/kamolsavar/firstProjectNightWatchJs#readme"
+  "homepage": "https://github.com/kamolsavar/firstProjectNightWatchJs#readme",
+  "devDependencies": {
+    "cucumber-pretty": "^6.0.1",
+    "nightwatch-api": "^3.0.2"
+  }
 }
