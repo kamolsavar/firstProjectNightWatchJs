@@ -7,7 +7,8 @@ module.exports = {
         languageDropValue:'.goog-menuitem[value = "lang_af"]',
         lastUpdateDropDown:'#as_qdr_button',
         lastUpdateDropDownValue:'.goog-menuitem[value ="d"]',
-        submitButton: ".jfk-button[value='Advanced Search']"
+        submitButton: ".jfk-button[value='Advanced Search']",
+        resultPageQuery: '#searchform input[name = "q"]'
     },
     commands: [{
 
